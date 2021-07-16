@@ -23,11 +23,13 @@ window.addEventListener("load", function(){
     let up = this.document.getElementById('up');
     up.addEventListener("click", function(){
         rocketImg.style.bottom = parseInt(rocketImg.style.bottom)+10 +'px';
+        shuttleHeight.innerHTML = parseInt(shuttleHeight.innerHTML)+10000
     })
 
     let down = this.document.getElementById('down');
     down.addEventListener("click", function(){
         rocketImg.style.bottom = parseInt(rocketImg.style.bottom)-10 +'px';
+        shuttleHeight.innerHTML = parseInt(shuttleHeight.innerHTML)-10000
     })
 
     let takeoff = this.document.getElementById("takeoff");
